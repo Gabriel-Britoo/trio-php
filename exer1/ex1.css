@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+}
+
+#secao1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #5c819d;
+}
+
+#box-login{
+    display: flex;
+    background-color: white;
+    width: 720px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+#box-img-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dde8f1;
+    width: 350px;
+    height: 450px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+#img-login{
+    width: 335px;
+    height: 335px;
+}
+
+form{
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+h1{
+    font-family: Reem Kufi;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.inserir{
+    width: 230px;
+    height: 35px;
+    border: none;
+    border-radius: 50px;
+    background-color: rgb(227, 227, 227);
+    margin-bottom: 10px;
+    padding-left: 16px;
+    font-family: Inter;
+}
+
+
+#entrar{
+    background-color: #75B0DD;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-family: Reem Kufi;
+    font-size: 15px;
+    transition: background-color 0.2s;
+}
+
+#entrar:hover{
+    background-color: #92c3e8;
+}
+#body2{
+    background-color: #5c819d;
+}
+#divBemVindo{
+    width: 380px;
+    height: 410px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 18vh;
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#divBemVindo h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+#divBemVindo h1{
+    text-align: center;
+    margin: 20px 0;
+}
+#divBemVindo p{
+    margin-top: 30px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+#divBemVindo li{
+    margin-top: 10px;
+    font-size: 20px;
+}
+hr{
+    height: 1.8px;
+    background-color: black;
+}
