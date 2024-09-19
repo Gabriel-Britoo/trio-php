@@ -15,14 +15,24 @@
         
         <form method="post" action="cadastrar.php">
                         <h1>LOGIN</h1>
-                        <input name="nome" class="inserir" type="text" placeholder="Nome" required>
-                        <input name="email" class="inserir" type="email" placeholder="Email" required>
-                        <input name="tel" class="inserir" type="tel" placeholder="Telefone" required>
+                        <input id="nome" name="nome" class="inserir" type="text" placeholder="Nome" required>
+                        <input id="email" name="email" class="inserir" type="email" placeholder="Email" required>
+                        <input id="tel" name="tel" class="inserir" type="number" placeholder="Telefone" required>
                         <button id="entrar" type="submit">entrar</button>
                         
                     </form>
         </body>
     </section>
-    
+    <script>
+        var nome = document.getElementById(nome)
+        var email = document.getElementById(email)
+        var tel = document.getElementById(tel)
+        if (nome != "" && email != "" && tel !="") {
+            document.getElementById('entrar').style.backgroundColor = 'green';
+        }
+        else{
+            document.getElementById('entrar').style.backgroundColor = 'blue';
+        }
+    </script>
 
 </html>
