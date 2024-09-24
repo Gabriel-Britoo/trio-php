@@ -5,7 +5,7 @@ $data = $_POST['dataReuniao'];
 $hora = $_POST['horaReuniao'];
 
 if ($nome != "" || $data != "" || $hora != ""){ 
-    echo "<div id='agendar'><h3>Bem-vindo, $nome!</h3><p>Sua reunião foi agendada para o dia: </p><strong>$data às $hora</strong></div>";
+    echo "<div id='agendar'><h3>Bem-vindo(a), $nome!</h3><p>Sua reunião foi agendada para o dia: </p><strong>$data às $hora</strong></div>";
 }
 ?>
 <!DOCTYPE html>
