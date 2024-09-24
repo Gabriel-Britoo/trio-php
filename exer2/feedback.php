@@ -4,38 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="./feedback.css">
     <title>Feedback</title>
 </head>
 <body>
     <form method="post" action="processar_feedback.php">
-        <h1>Avalie um produto</h1>
+        <h1 id="h1-avalie">Avalie um produto</h1>
+        <h2 id="h2-avalie">Apreciamos muito sua opnião!</h2>
         <div class="selecione">
             <p id="p-selecione">Selecione o produto:</p>
             <select id="selecao" name="produto">
                 <option value="selecionar" name="selecionar">
                     Selecionar
                 </option>
-                <option value="teste" name="teste">
-                    teste
+                <option value="Batedeira" name="batedeira">
+                    Batedeira
+                </option>
+                <option value="Televisão" name="televisao">
+                    Televisão
+                </option>
+                <option value="Air Fryer" name="air fryer">
+                    Air Fryer
+                </option>
+                <option value="Secador" name="secador">
+                    Secador
                 </option>
             </select>
         </div>
         <div class="selecione">
-            <p id="p-selecione">Nível de satisfação:</p>
+            <p id="p-selecione">Nota ao produto:</p>
             <select id="selecao" name="avaliacao">
                 <option value="selecionar" name="selecionar">
                     Selecionar
                 </option>
-                <option value="Insatisfeito" name="insatisfeito">
-                    Insatisfeito
+                <option value="★☆☆☆☆" name="pessimo">
+                    1 ★☆☆☆☆
                 </option>
-                <option value="Neutro" name="neutro">
-                    Neutro
+                <option value="★★☆☆☆" name="ruim">
+                    2 ★★☆☆☆
                 </option>
-                <option value="Satisfeito" name="satisfeito">
-                    Satisfeito
+                <option value="★★★☆☆" name="regular">
+                    3 ★★★☆☆
+                </option>
+                <option value="★★★★☆" name="bom">
+                    4 ★★★★☆
+                </option>
+                <option value="★★★★★" name="excelente">
+                    5 ★★★★★
                 </option>
             </select>
         </div>
