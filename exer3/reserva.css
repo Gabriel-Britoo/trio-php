@@ -69,6 +69,11 @@ input[type="date"]{
     justify-content: center;
     align-items: start;
 }
+input[type="time"]{
+    display: flex;
+   flex-direction: row;
+
+}
 #agendar{
     margin-top: 12%;
     margin-left: auto;
