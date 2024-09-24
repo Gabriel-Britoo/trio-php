@@ -1,7 +1,3 @@
-<?php
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,35 +9,38 @@
     <title>Feedback</title>
 </head>
 <body>
-    <form action="">
+    <form method="post" action="processar_feedback.php">
         <h1>Avalie um produto</h1>
-        <div id="selecione">
+        <div class="selecione">
             <p id="p-selecione">Selecione o produto:</p>
-            <select name="">
-                <option value="">
+            <select id="selecao" name="produto">
+                <option value="selecionar" name="selecionar">
                     Selecionar
+                </option>
+                <option value="teste" name="teste">
+                    teste
                 </option>
             </select>
         </div>
-        <div id="stars">
-            <span class="material-symbols-outlined">
-                grade
-            </span>
-            <span class="material-symbols-outlined">
-                grade
-            </span>
-            <span class="material-symbols-outlined">
-                grade
-            </span>
-            <span class="material-symbols-outlined">
-                grade
-            </span>
-            <span class="material-symbols-outlined">
-                grade
-            </span>
+        <div class="selecione">
+            <p id="p-selecione">Nível de satisfação:</p>
+            <select id="selecao" name="avaliacao">
+                <option value="selecionar" name="selecionar">
+                    Selecionar
+                </option>
+                <option value="Insatisfeito" name="insatisfeito">
+                    Insatisfeito
+                </option>
+                <option value="Neutro" name="neutro">
+                    Neutro
+                </option>
+                <option value="Satisfeito" name="satisfeito">
+                    Satisfeito
+                </option>
+            </select>
         </div>
-        <textarea name="" id="comentario" placeholder="Adicione um comentário" required></textarea>
-        <button type="submit">Enviar</button>
+        <textarea name="comentario" id="comentario" placeholder="Adicione um comentário" required></textarea>
+        <button id="envia" type="submit">Enviar</button>
     </form>
 </body>
 </html>
