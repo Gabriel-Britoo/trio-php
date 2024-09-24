@@ -9,7 +9,7 @@ body{
     justify-content: center;
     height: 100vh;
     background: rgb(137,178,228);
-background: radial-gradient(circle, rgb(142, 182, 232) 0%, rgb(65, 116, 225) 100%);
+    background: radial-gradient(circle, rgb(142, 182, 232) 0%, rgb(65, 116, 225) 100%);
 }
 
 form{
@@ -22,21 +22,28 @@ form{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 8px 30px 0px;
 }
 
-h1{
-    font-size: 32px;
+#h1-avalie{
+    font-size: 34px;
     color: rgb(51, 62, 135);
     margin-top: 27px;
-    margin-bottom: 27px;
+    margin-bottom: 7px;
     font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+#h2-avalie{
+    margin-bottom: 28px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 18px;
+    color: rgb(145, 150, 175);
 }
 
 .selecione{
     display: flex;
     flex-direction: row;
-    margin-bottom: 20px;
+    margin-bottom: 14px;
 }
 
-select{
+#selecao{
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
@@ -47,20 +54,6 @@ select{
     font-size: 16px;
     font-weight: 500;
     font-family: 'Montserrat', sans-serif;
-}
-
-#stars{
-    margin-bottom: 15px;
-}
-
-.material-symbols-outlined {
-    font-variation-settings:
-    'FILL' 0,
-    'wght' 200,
-    'GRAD' 0,
-    'opsz' 24;
-    color: rgba(0, 0, 0, 0.666);
-    font-size: 32px;
 }
 
 #comentario{
@@ -84,4 +77,91 @@ select{
     font-weight: 600 ;
     font-family: 'Montserrat', sans-serif;
     cursor: pointer;
+}
+
+#show-feedback{
+    background-color: white;
+    border-radius: 10px;
+    width: auto;
+    height: auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 8px 30px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: transform 0.3s;
+}
+
+#show-feedback:hover{
+    transform: scale(1.03);
+}
+
+#obrigado{
+    padding: 24px;
+    padding-bottom: 0;
+    font-size: 32px;
+    color: rgb(51, 62, 135);
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+#texto-resultado{
+    padding: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 420px;
+}
+
+.p-resultado-feedback{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 23px;
+    color: rgb(24, 24, 24);
+    text-align: justify;
+}
+
+@media (max-width: 480px){
+
+    /* feedback pagina 1 */
+
+    form{
+        width: 85%;
+    }
+    #comentario{
+        width: 85%;
+        font-size: 14px;
+    }
+    #envia{
+        width: 55%;
+    }
+    #h1-avalie{
+        font-size: 26px;
+    }
+    #h2-avalie{
+        font-size: 16px;
+    }
+    #p-selecione{
+        font-size: 14px;
+    }
+    #selecao{
+        font-size: 14px;
+    }
+
+    /* feedback pagina 2 */
+
+    #show-feedback{
+        width: 85%;
+    }
+    #obrigado{
+        font-size: 23px;
+    }
+    .p-resultado-feedback{
+        font-size: 16px;
+    }
+    #texto-resultado{
+        width: 80%;
+    }
 }

@@ -20,6 +20,7 @@ body{
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    transition: transform 0.3s;
     box-shadow: rgb(207, 180, 81) 0px 0px 0px 3px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(154, 154, 154) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(154, 154, 154) 20px -20px, rgb(223, 196, 101) 30px -30px 0px -3px, rgb(189, 164, 74) 30px -30px;
 }
 
@@ -56,4 +57,8 @@ button:hover{
     background-color: rgb(222, 198, 112);
     color: rgb(101, 101, 101);
     border: 3px solid rgb(185, 165, 94);
+}
+
+ .blocos:hover{
+    transform: scale(1.06);
 }
