@@ -21,7 +21,7 @@
       <input id="data" type="date" name="dataReuniao" required>
 
       <label for="hora">Horário da reunião:</label>
-      <input id="hora" type="text" name="horaReuniao" required>
+      <input id="hora" type="time" name="horaReuniao" required>
       <button type="submit">Reservar</button>
    </form>
  </body>
